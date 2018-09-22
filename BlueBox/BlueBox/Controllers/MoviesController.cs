@@ -16,5 +16,16 @@ namespace BlueBox.Controllers
 
             return View(movie);
         }
+
+        public ActionResult Edit(int id)
+        {
+            return Content("id=" + id);
+        }
+
+        // movies
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(year + "/" + month);
+        }
     }
 }

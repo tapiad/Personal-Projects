@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #1491f6;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -32,6 +33,7 @@ textarea {
 */
 
 #navBrand {
+    padding-left: 10px;
     font-weight: bold;
     font-style: italic;
 }

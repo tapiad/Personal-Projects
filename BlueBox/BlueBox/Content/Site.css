@@ -45,3 +45,17 @@ textarea {
 .carousel {
     margin: 0 auto;
 }
+
+.btn-group-vertical{
+    margin-bottom: 10px;
+}
+
+.btn-group-vertical .btn {
+    margin-bottom: 20px;
+}
+
+#devSignature {
+    margin-top: 2px;
+    font-family: 'Brush Script MT';
+    font-size: 25px;
+}

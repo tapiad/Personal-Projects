@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #1491f6;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,40 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+/******************************** Custom CSS ********************************/
+
+/*
+    # - id
+    . - class
+*/
+
+#navBrand {
+    padding-left: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#img-slider {
+    max-width: 850px;
+}
+
+.carousel {
+    margin: 0 auto;
+}
+
+.btn-group-vertical{
+    margin-bottom: 10px;
+}
+
+.btn-group-vertical .btn {
+    margin-bottom: 20px;
+}
+
+#devSignature {
+    margin-top: 2px;
+    font-family: 'Brush Script MT';
+    font-size: 25px;
 }

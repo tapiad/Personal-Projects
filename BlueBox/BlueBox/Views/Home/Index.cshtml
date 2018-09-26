@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<br/>
+<br />
 
 <h3>Now Playing</h3>
 
@@ -54,4 +54,15 @@
 
     </div>
 </div>
-<br />
+
+
+
+@section scripts{
+
+    <script>
+        //Get Movie API Key
+        var movieAPIKey = '@System.Web.Configuration.WebConfigurationManager.AppSettings["TheMovieDB_APIKey"]';
+    </script>
+
+    <script type="text/javascript" src="~/Scripts/MyScripts/IndexScript.js"></script>
+}

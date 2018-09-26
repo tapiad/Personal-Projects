@@ -32,19 +32,24 @@ textarea {
     . - class
 */
 
+/*navBar Brand Name*/
 #navBrand {
     padding-left: 10px;
     font-weight: bold;
     font-style: italic;
 }
 
+/*Carousel Image Size*/
 #img-slider {
     max-width: 850px;
 }
 
+/*Carousel*/
 .carousel {
     margin: 0 auto;
+    margin-bottom: 50px;
 }
+
 
 .btn-group-vertical{
     margin-bottom: 10px;
@@ -54,6 +59,7 @@ textarea {
     margin-bottom: 20px;
 }
 
+/*Developer's Signature*/
 #devSignature {
     margin-top: 2px;
     font-family: 'Brush Script MT';

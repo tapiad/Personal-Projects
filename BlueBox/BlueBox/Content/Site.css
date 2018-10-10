@@ -32,6 +32,7 @@ textarea {
     . - class
 */
 
+
 /*navBar Brand Name*/
 #navBrand {
     padding-left: 10px;
@@ -39,20 +40,25 @@ textarea {
     font-style: italic;
 }
 
-/*Carousel Image Size*/
+/*Carousel Size*/
 #img-slider {
     max-width: 850px;
     background-color: #565e64;
 }
 
-/*Carousel*/
+/*Carousel Placement*/
 .carousel {
     margin: 0 auto;
     margin-bottom: 50px;
 }
 
+/*Movie Info*/
+#movieInfo{
+    width: 50%;
+    margin-left: 410px;
+}
 
-.btn-group-vertical{
+.btn-group-vertical {
     margin-bottom: 10px;
 }
 

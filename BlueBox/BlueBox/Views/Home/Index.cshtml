@@ -27,26 +27,7 @@
 
         <!-- The Carousel Slideshow -->
         <div class="carousel-inner" id="carouselSlider">
-            @*<div class="carousel-item active">
-                    <img class="img-fluid" src="~/Content/Images/Jurassic-World-Fallen-Kingdom.jpg" alt="Jurassic World: Fallen Kingdom">
-                    <div class="carousel-caption">
-                        <h3>Jurassic World: Fallen Kingdom</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="img-fluid" src="~/Content/Images/Uncle-Drew.jpg" alt="Uncle Drew">
-                    <div class="carousel-caption">
-                        <h3>Uncle Drew</h3>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img class="img-fluid" src="~/Content/Images/Oceans-8.jpg" alt="Oceans's 8">
-                    <div class="carousel-caption">
-                        <h3>Ocean's 8</h3>
-                    </div>
-                </div>*@
+            <!--This is where the 'Now Playing' information is going to be displayed -->
         </div>
 
 
@@ -60,10 +41,27 @@
 
     </div>
 
-    @*<div class="container">
-        <iframe width="420" height="345" src="https://www.youtube.com/embed/dzxFdtWmjto"></iframe>
-    </div>*@
+
+    <!--credit:https://codepen.io/JacobLett/pen/xqpEYE -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 
 

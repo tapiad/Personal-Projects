@@ -168,6 +168,7 @@
     <Content Include="Content\Images\BlueCube.png" />
     <Content Include="Content\Images\Jurassic-World-Fallen-Kingdom.jpg" />
     <Content Include="Content\Images\Oceans-8.jpg" />
+    <Content Include="Content\Images\TheMovieDB.png" />
     <Content Include="Content\Images\Uncle-Drew.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

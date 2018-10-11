@@ -42,6 +42,14 @@ textarea {
 }
 
 
+/*The Movie DB Logo*/
+#movieDBLogo {
+    width: auto;
+    height: 50px;
+    float: right;
+}
+
+
 /*Carousel Size*/
 #img-slider {
     max-width: 850px;

@@ -2,13 +2,16 @@
     ViewBag.Title = "Home Page";
 }
 
-<br/>
+<br />
 
 <h3>Now Playing</h3>
 
 <div class="col-sm-12 col-md-12 col-lg-12">
+
     <!--Line Break-->
     <br />
+
+
     @*Carosel*@
     <div id="img-slider" class="carousel slide" data-ride="carousel">
 
@@ -17,32 +20,16 @@
             <li data-target="#img-slider" data-slide-to="0" class="active"></li>
             <li data-target="#img-slider" data-slide-to="1"></li>
             <li data-target="#img-slider" data-slide-to="2"></li>
+            <li data-target="#img-slider" data-slide-to="3"></li>
+            <li data-target="#img-slider" data-slide-to="4"></li>
         </ul>
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="img-fluid" src="~/Content/Images/Jurassic-World-Fallen-Kingdom.jpg" alt="Jurassic World: Fallen Kingdom">
-                <!-- The Caption -->
-                <div class="carousel-caption">
-                    <h3>Jurassic World: Fallen Kingdom</h3>
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <img class="img-fluid" src="~/Content/Images/Uncle-Drew.jpg" alt="Uncle Drew">
-                <div class="carousel-caption">
-                    <h3>Uncle Drew</h3>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <img class="img-fluid" src="~/Content/Images/Oceans-8.jpg" alt="Oceans's 8">
-                <div class="carousel-caption">
-                    <h3>Ocean's 8</h3>
-                </div>
-            </div>
+        <!-- The Carousel Slideshow -->
+        <div class="carousel-inner" id="carouselSlider">
+            <!--This is where the 'Now Playing' information is going to be displayed -->
         </div>
+
 
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#img-slider" data-slide="prev">
@@ -53,5 +40,39 @@
         </a>
 
     </div>
+
+
+    <!--credit:https://codepen.io/JacobLett/pen/xqpEYE -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always">></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-<br />
+
+
+
+
+
+
+@section scripts{
+
+    <script>
+        //Get Movie API Key
+        var movieAPIKey = '@System.Web.Configuration.WebConfigurationManager.AppSettings["TheMovieDB_APIKey"]';
+    </script>
+
+    <script type="text/javascript" src="~/Scripts/MyScripts/IndexScript.js"></script>
+}

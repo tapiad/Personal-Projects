@@ -32,21 +32,45 @@ textarea {
     . - class
 */
 
+
+
+/*navBar Brand Name*/
 #navBrand {
     padding-left: 10px;
     font-weight: bold;
     font-style: italic;
 }
 
+
+/*The Movie DB Logo*/
+#movieDBLogo {
+    width: auto;
+    height: 50px;
+    float: right;
+}
+
+
+/*Carousel Size*/
 #img-slider {
     max-width: 850px;
+    background-color: #565e64;
 }
 
+
+/*Carousel Placement*/
 .carousel {
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
-.btn-group-vertical{
+
+/*Movie Info*/
+#movieInfo{
+    width: 50%;
+    margin-left: 410px;
+}
+
+.btn-group-vertical {
     margin-bottom: 10px;
 }
 
@@ -54,8 +78,33 @@ textarea {
     margin-bottom: 20px;
 }
 
+
+/*Developer's Signature*/
 #devSignature {
     margin-top: 2px;
     font-family: 'Brush Script MT';
     font-size: 25px;
+}
+
+
+/*Modal --- Credit: https://codepen.io/JacobLett/pen/xqpEYE*/
+.modal-dialog {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    opacity: 1;
 }

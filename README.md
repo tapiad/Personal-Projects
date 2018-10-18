@@ -2,6 +2,9 @@
 ---
 
 # BlueBox
+<div style="text-align:center">
+    <img src ="https://github.com/tapiad/Personal-Projects/blob/master/BlueBox/BlueBox/Content/Images/BlueCube.png?raw=true" />
+</div>
 BlueBox is a web application of capable of providing information about Movies. It will give you information about upcoming movies, movies that are now playing. Provide popular movies and along with top rated movies. You will be able to watch movie trailers and more!
 
 ### How to Make it Work:

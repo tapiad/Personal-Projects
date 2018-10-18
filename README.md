@@ -1,7 +1,7 @@
 # **Daniel's Personal Projects**
 ---
 
-# BlueBox ![BlueBox Logo](https://github.com/tapiad/Personal-Projects/blob/master/BlueBox/BlueBox/Content/Images/BlueCube.png?raw=true "BlueBox")
+# BlueBox 
 
 <p align="center">
   <img src="https://github.com/tapiad/Personal-Projects/blob/master/BlueBox/BlueBox/Content/Images/BlueCube.png?raw=true" />

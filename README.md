@@ -4,7 +4,7 @@
 # BlueBox
 BlueBox is a web application of capable of providing information about Movies. It will give you information about upcoming movies, movies that are now playing. Provide popular movies and along with top rated movies. You will be able to watch movie trailers and more!
 
-##### How to Make it Work:
+### How to Make it Work:
 
 * **Download** and **Install** [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/ "Visual Studio Community 2017")
 * Go to https://github.com/tapiad/Personal-Projects and **Clone** or **Fork** this Repository

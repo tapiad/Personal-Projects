@@ -1,10 +1,8 @@
 # **Daniel's Personal Projects**
 ---
 
-# BlueBox
-<p> align:"center">
-    <img src="https://github.com/tapiad/Personal-Projects/blob/master/BlueBox/BlueBox/Content/Images/BlueCube.png?raw=true" alt="BlueBox logo" />
-</p>
+# BlueBox ![BlueBox Logo](https://github.com/tapiad/Personal-Projects/blob/master/BlueBox/BlueBox/Content/Images/BlueCube.png?raw=true "BlueBox")
+
 BlueBox is a web application of capable of providing information about Movies. It will give you information about upcoming movies, movies that are now playing. Provide popular movies and along with top rated movies. You will be able to watch movie trailers and more!
 
 ### How to Make it Work:
@@ -23,7 +21,7 @@ BlueBox is a web application of capable of providing information about Movies. I
 * Get your **API Key** from [The Movie DB](https://www.themoviedb.org/documentation/api "The Movie DB - API Overview") - A TMDb user account is required to request an API key. 
 * The API Key is stored outside the repo for saftly reasons: Open the **Web.config** file of the project
      - The *Web.config* obtains the API Key through the **appSettings** from a file outside the repo
-![API Key Path Image](https://github.com/tapiad/Personal-Projects/blob/master/Images/API_Key_Path.PNG?raw=true "API Key Path ")
+![API Key Path Image](https://github.com/tapiad/Personal-Projects/blob/master/Images/API_Key_Path.PNG?raw=true "API Key Path")
      - This example shows that the API Key is stored in a outside file named *API_Keys.config* which is stored in the *APIKeys* folder. Path to file: `..\..\..\APIKeys\API_Keys.config`
 * The *API_Keys.config* (outside the repo file) should be a **.config** file with the following syntax: 
 ```html

@@ -4,7 +4,7 @@
 
 <br />
 
-<h3>Now Playing</h3>
+<h3>Movies Playing in Theaters</h3>
 
 <div class="col-sm-12 col-md-12 col-lg-12">
 
@@ -60,19 +60,23 @@
         </div>
     </div>
 
+    <div class="row">
+        <p>Please checkout These New Movie Releases:</p>
+        @*New Movie Releases Button*@
+        <button class="btn" id="newReleaseBtn" onclick="location.href='@Url.Action("NewMovieReleases", "Home")'">New Releases</button>
+    </div>
+
 </div>
-
-
 
 
 
 
 @section scripts{
 
-    <script>
+    @*<script>
         //Get Movie API Key
         var movieAPIKey = '@System.Web.Configuration.WebConfigurationManager.AppSettings["TheMovieDB_APIKey"]';
-    </script>
+    </script>*@
 
     <script type="text/javascript" src="~/Scripts/MyScripts/IndexScript.js"></script>
 }

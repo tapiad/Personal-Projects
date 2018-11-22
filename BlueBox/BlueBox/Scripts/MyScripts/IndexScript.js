@@ -1,4 +1,4 @@
-﻿onload = LoadNewMovies()
+﻿onload = LoadNewMovies();
 
 function LoadNewMovies() {
     console.log("You're in the IndexScript.js Script");
@@ -48,7 +48,7 @@ function getNowPlayingMovies(data) {
 
 
         // Set First Carousel Active
-        if (i == 0) {
+        if (i === 0) {
             carSlider = carSlider.concat('<div class="carousel-item active">');
         } else {
             carSlider = carSlider.concat('<div class="carousel-item">');
@@ -104,7 +104,7 @@ function playTrailer() {
 
 
 // Get Trailer Video & Autoplay on Modal
-var videoSrc
+var videoSrc;
 function displayTrailerVideo(data) {
     // Get Video Key
     var videoKey = data.results[0].key;
@@ -126,7 +126,7 @@ $(document).ready(function () {
     $('#myModal').on('hide.bs.modal', function (e) {
         // Set to Video Source without Autoplay
         $("#video").attr('src', videoSrc);
-    })
+    });
  
 });
 

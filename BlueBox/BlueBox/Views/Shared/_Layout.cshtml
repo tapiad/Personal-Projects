@@ -30,7 +30,12 @@
         </div>
     </nav>
     <div class="container body-content">
+        <br />
         @RenderBody()
+        <script>
+            //Get Movie API Key
+            var movieAPIKey = '@System.Web.Configuration.WebConfigurationManager.AppSettings["TheMovieDB_APIKey"]';
+        </script>
         <hr />
         <div class="row">
             <div class="col-sm-10">

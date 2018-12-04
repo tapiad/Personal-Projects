@@ -112,5 +112,11 @@ textarea {
 /*New Release Button*/
 #newReleaseBtn {
     background: #00d474;
-    margin-left: 10px;
+    margin-left: 10px; 
+}
+
+
+/*Pagination Buttons*/
+#paginationBtn .btn{
+    background: #00d474;
 }

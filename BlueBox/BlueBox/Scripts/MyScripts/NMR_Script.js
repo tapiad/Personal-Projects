@@ -7,6 +7,16 @@ var page;
 function LoadNMReleases() {
     console.log("You're in the NMR_Script.js Script");
 
+    // CREDIT: https://stackoverflow.com/questions/4210798/how-to-scroll-to-top-of-page-with-javascript-jquery
+    // Scroll Page to Top
+    if ($('body').scrollTop() > 0) {
+        $('body').scrollTop(0);         //Chrome,Safari
+    } else {
+        if ($('html').scrollTop() > 0) {    //IE, FF
+            $('html').scrollTop(0);
+        }
+    }
+
     // Get Today's Date
     getDate();
     page = getPage();

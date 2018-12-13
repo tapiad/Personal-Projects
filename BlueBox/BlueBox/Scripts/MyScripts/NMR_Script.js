@@ -7,22 +7,20 @@ var page;
 function LoadNMReleases() {
     console.log("You're in the NMR_Script.js Script");
 
-    // CREDIT: https://stackoverflow.com/questions/4210798/how-to-scroll-to-top-of-page-with-javascript-jquery
-    // Scroll Page to Top
-    if ($('body').scrollTop() > 0) {
-        $('body').scrollTop(0);         //Chrome,Safari
-    } else {
-        if ($('html').scrollTop() > 0) {    //IE, FF
-            $('html').scrollTop(0);
-        }
-    }
+    // Scroll to Top of Page
+    scrollUp();    
 
     // Get Today's Date
     getDate();
+
+    // Get Current Page
     page = getPage();
+
+    // If Page is undefined
     if (page === undefined) {
         page = 1;
     }
+    // Display Page Number
     $("#currentPage").text("Page " + page + "/10");
 
     console.log("Today is: " + today);
@@ -76,9 +74,7 @@ function getNewMoviesReleases(data) {
                     '<p>' + data.results[y].overview + '</p>' + // Movie Overview Details
                 '</div>');
 
-            //console.log('in: ' + y);
         }
-        //console.log('out');
 
         // Close div row with a break 
         movieReleases = movieReleases.concat('</div><br />');
@@ -86,34 +82,49 @@ function getNewMoviesReleases(data) {
         // Add reults to display
         $("#newMovRel_Results").append(movieReleases);
 
-        
+        // Disable Previous Button if Page == 1
         if (page === 1) {
             $("#prevBtn").attr('disabled', 'disabled');
         } else {
             $("#prevBtn").removeAttr('disabled');
         }
-
+        // Disable Next Page Button if Page > 9
         if (page > 9) {
             $("#nextBtn").attr('disabled', 'disabled');
         } else {
             $("#nextBtn").removeAttr('disabled');
-        }
-        
+        }       
     }
 }
 
+// CREDIT: https://stackoverflow.com/questions/4210798/how-to-scroll-to-top-of-page-with-javascript-jquery
+// Scroll Page to Top
+function scrollUp() {
+    
+    if ($('body').scrollTop() > 0) {
+        $('body').scrollTop(0);         //Chrome,Safari
+    } else {
+        if ($('html').scrollTop() > 0) {    //IE, FF
+            $('html').scrollTop(0);
+        }
+    }
+}
+
+// Next Page
 function nextPage() {
     page += 1;
     
     LoadNMReleases();
 }
 
+// Previous Page
 function prevPage() {
     page -= 1;
     
     LoadNMReleases();
 }
 
+// Get Current Page
 function getPage() {
     return page;
 }

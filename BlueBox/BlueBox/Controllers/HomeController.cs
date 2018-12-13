@@ -23,5 +23,11 @@ namespace BlueBox.Controllers
         {
             return View();
         }
+
+        public ActionResult NewMovieReleases()
+        {
+            return View();
+        }
+
     }
 }

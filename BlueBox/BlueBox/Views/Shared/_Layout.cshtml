@@ -14,11 +14,11 @@
         <div class="container">
             <ul class="navbar-nav">
                 <li class="nav-item active form-row">
-                    <img src="~/Content/Images/BlueCube.png" alt="Blue Cube" style="width: 50px; height: 50px;"/>
+                    <img src="~/Content/Images/BlueCube.png" alt="Blue Cube" style="width: 50px; height: 50px;" />
                     <a class="navbar-brand" href="/Home/Index" id="navBrand">BlueBox</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/Home/Index">Home</a>
+                    <a class="nav-link" href="/Home/NewMovieReleases">New Releases</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/Home/About">About</a>
@@ -30,7 +30,12 @@
         </div>
     </nav>
     <div class="container body-content">
+        <br />
         @RenderBody()
+        <script>
+            //Get Movie API Key
+            var movieAPIKey = '@System.Web.Configuration.WebConfigurationManager.AppSettings["TheMovieDB_APIKey"]';
+        </script>
         <hr />
         <div class="row">
             <div class="col-sm-10">

@@ -95,6 +95,7 @@ textarea {
 
 .modal-body {
     position: relative;
+    background-color: #565e64
 }
 
 .close {
@@ -104,7 +105,7 @@ textarea {
     z-index: 999;
     font-size: 2rem;
     font-weight: normal;
-    color: #fff;
+    color: white;
     opacity: 1;
 }
 

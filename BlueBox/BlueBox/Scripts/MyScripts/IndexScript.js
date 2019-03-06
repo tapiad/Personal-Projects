@@ -35,6 +35,7 @@ function getNowPlayingMovies(data) {
         var carSlider = "";
         // Get Poster Image
         var posterImg = posterURL + result.poster_path;
+        console.log("Poster Image: " + posterImg);
         // Get Title
         var movieTitle = result.original_title;
         // Get Vote Count
@@ -57,7 +58,7 @@ function getNowPlayingMovies(data) {
 
         // Create Movie Poster
         carSlider = carSlider.concat(
-            '<img class="img-fluid" src="' + posterImg + '" alt=' + movieTitle + '>' + // Poster Image
+            '<img src="' + posterImg + '" alt=' + movieTitle + '>' + // Poster Image
                 '<div class="carousel-caption fixed-top" id="movieInfo">' +
                 '<h1>' + movieTitle + '</h1>' + // Movie Title
                 '<hr />' +

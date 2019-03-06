@@ -1,11 +1,17 @@
 ﻿onload = LoadNMReleases();
 
+//$('#searchBtn').click(LoadNMReleases());
+
 // Variable to hold date value
 var today;
 var page;
 
 function LoadNMReleases() {
     console.log("You're in the NMR_Script.js Script");
+
+    isAdult = $('input[name="adultContent"]:checked').val();
+
+    console.log("Adult Value:" + isAdult);
 
     // Scroll to Top of Page
     scrollUp();    
@@ -28,8 +34,8 @@ function LoadNMReleases() {
 
     // Create Source for GET JSON Request for New Movie Releases
     var source = "https://api.themoviedb.org/3/discover/movie?api_key=" + movieAPIKey +
-        "&language=en-US&sort_by=release_date.desc&include_adult=false&" +
-        "include_video=false&page=" + page + "&region=US&release_date.lte=" + today + "&with_original_language=en";
+        "&language=en-US&sort_by=release_date.desc&include_adult=" + isAdult +
+        "&include_video=false&page=" + page + "&region=US&release_date.lte=" + today + "&with_original_language=en";
 
     console.log("Now Playing JSON Source: " + source);
 

@@ -58,8 +58,8 @@ function getNowPlayingMovies(data) {
 
         // Create Movie Poster
         carSlider = carSlider.concat(
-            '<img src="' + posterImg + '" alt=' + movieTitle + '>' + // Poster Image
-                '<div class="carousel-caption fixed-top" id="movieInfo">' +
+            '<img src="' + posterImg + '" alt=' + movieTitle + '>' + // Poster Image --fixed-top
+                '<div class="carousel-caption" id="movieInfo">' +
                 '<h1>' + movieTitle + '</h1>' + // Movie Title
                 '<hr />' +
                 '<h4 class="text-left">Overview:</h4>' +
@@ -69,6 +69,8 @@ function getNowPlayingMovies(data) {
                 '" data-target="#myModal">Watch Trailer</button >' + // Button to Watch Trailer
                 '</div>' +
             '</div>');
+
+        console.log("Car Slider: " + carSlider);
 
         // Add Movie Poster to Carousel Slider
         $("#carouselSlider").append(carSlider);

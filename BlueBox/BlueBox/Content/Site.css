@@ -65,9 +65,10 @@ textarea {
 
 
 /*Movie Info*/
-#movieInfo{
+#movieInfo {
     width: 50%;
-    margin-left: 410px;
+    height: 100%;
+    margin-left: 33%;
 }
 
 .btn-group-vertical {

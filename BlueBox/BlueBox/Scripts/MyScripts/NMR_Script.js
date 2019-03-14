@@ -11,7 +11,12 @@ function LoadNMReleases() {
 
     isAdult = $('input[name="adultContent"]:checked').val();
 
+    category = $('#sortBy :selected').val();
+    cending = $('input[name="cending"]:checked').val();
+    sortBy = category + cending;
+
     console.log("Adult Value:" + isAdult);
+    console.log("Sort By:" + sortBy);
 
     // Scroll to Top of Page
     scrollUp();    
@@ -34,7 +39,7 @@ function LoadNMReleases() {
 
     // Create Source for GET JSON Request for New Movie Releases
     var source = "https://api.themoviedb.org/3/discover/movie?api_key=" + movieAPIKey +
-        "&language=en-US&sort_by=release_date.desc&include_adult=" + isAdult +
+        "&language=en-US&sort_by=" + sortBy + "&include_adult=" + isAdult +
         "&include_video=false&page=" + page + "&region=US&release_date.lte=" + today + "&with_original_language=en";
 
     console.log("Now Playing JSON Source: " + source);
@@ -69,6 +74,12 @@ function getNewMoviesReleases(data) {
 
             // Set y to display first and second movie to each row
             var y = i + x;
+
+            // Filter out NULL posters
+            //for (z = 0; data.results[y].poster_path == ! null; z++) {
+            //    y = 
+            //}        
+            //console.log("Poster: " + data.results[y].poster_path);
 
             // get movie poster, title, and overview 
             movieReleases = movieReleases.concat(

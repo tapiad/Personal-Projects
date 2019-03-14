@@ -14,7 +14,7 @@
         <div class="row" id="moviefilter">
             @*Adult Content*@
             <label class="form-check-label" style="margin-right:10px;">
-                Adult Content:
+                <u>Adult Content</u>:
             </label>
             <div class="col form-check">
                 <input class="form-check-input" type="radio" name="adultContent" id="adultFalse" value="false" checked>
@@ -28,17 +28,42 @@
                     True
                 </label>
             </div>
-
-
+            @*Sort By*@
+            <label for="sortBy" style="margin-left:10px;"><u>Sort By</u>:</label>
+            <div class="col form-row">
+                <select id="sortBy">
+                    <option value="poplarity">Popularity</option>
+                    <option value="release_date">Release Date</option>
+                    <option value="revenue">Revenue</option>
+                    <option value="primary_release_date">Primary Release Date</option>
+                    <option value="original_title">Original Title</option>
+                    <option value="vote_average">Vote Average</option>
+                    <option value="vote_count">Vote Count</option>
+                </select>
+            </div>
+            <div class="col form-check">
+                <input class="form-check-input" type="radio" name="cending" id="asc" value=".asc" checked>
+                <label class="form-check-label" for="asc">
+                    Ascending
+                </label>
+            </div>
+            <div class="col form-check">
+                <input class="form-check-input" type="radio" name="cending" id="desc" value=".desc">
+                <label class="form-check-label" for="desc">
+                    Descending
+                </label>
+            </div>
         </div>
     </div>
+
     @*Search Button*@
     <div class="row-md-12 text-center">
-        <button class="btn btn-primary" id="searchBtn" onclick="LoadNMReleases()">Search</button>
+        <button class="btn-sm btn-primary btn-outline-light" id="searchBtn" onclick="LoadNMReleases()">Search</button>
     </div>
-</div>
 
     <br />
+
+    </div>
 
     @*Next and Previous Page Buttons*@
     <div class="row" id="paginationBtn">
@@ -55,32 +80,30 @@
 
     <br />
 
-</div>
-
-<div class="col-sm-12 col-md-12 col-lg-12" id="newMovRel_Results">
+    <div class="col-sm-12 col-md-12 col-lg-12" id="newMovRel_Results">
 
         @*New Movie Releases Results*@
 
-</div>
-
-<div class="col-sm-12 col-md-12 col-lg-12">
-    <br />
-    @*Next and Previous Page Buttons*@
-    <div class="row" id="paginationBtn">
-        <div class="col-sm-4 text-center">
-            <button class="btn" id="prevBtn" onclick="prevPage()">Prev Page</button>
-        </div>
-        <div class="col-sm-4 text-center">
-            <h5 id="currentPage"></h5>
-        </div>
-        <div class="col-sm-4 text-center">
-            <button class="btn" id="nextBtn" onclick="nextPage()">Next Page</button>
-        </div>
     </div>
 
-</div>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <br />
+        @*Next and Previous Page Buttons*@
+        <div class="row" id="paginationBtn">
+            <div class="col-sm-4 text-center">
+                <button class="btn" id="prevBtn" onclick="prevPage()">Prev Page</button>
+            </div>
+            <div class="col-sm-4 text-center">
+                <h5 id="currentPage"></h5>
+            </div>
+            <div class="col-sm-4 text-center">
+                <button class="btn" id="nextBtn" onclick="nextPage()">Next Page</button>
+            </div>
+        </div>
+
+    </div>
 
 
-@section scripts{
-    <script type="text/javascript" src="~/Scripts/MyScripts/NMR_Script.js"></script>
-}
+    @section scripts{
+        <script type="text/javascript" src="~/Scripts/MyScripts/NMR_Script.js"></script>
+    }

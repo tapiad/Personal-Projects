@@ -102,14 +102,18 @@ function getNewMoviesReleases(data) {
         // Disable Previous Button if Page == 1
         if (page === 1) {
             $("#prevBtn").attr('disabled', 'disabled');
+            $("#prevBtnB").attr('disabled', 'disabled');
         } else {
             $("#prevBtn").removeAttr('disabled');
+            $("#prevBtnB").removeAttr('disabled');
         }
         // Disable Next Page Button if Page > 9
         if (page > 9) {
             $("#nextBtn").attr('disabled', 'disabled');
+            $("#nextBtnB").attr('disabled', 'disabled');
         } else {
             $("#nextBtn").removeAttr('disabled');
+            $("#nextBtnB").removeAttr('disabled');
         }       
     }
 }

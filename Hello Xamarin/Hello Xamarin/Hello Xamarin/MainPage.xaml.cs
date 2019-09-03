@@ -13,5 +13,12 @@ namespace Hello_Xamarin
         {
             InitializeComponent();
         }
+
+        int count = 0;
+        void Button_Click(object sender, System.EventArgs e)
+        {
+            count++;
+            ((Button)sender).Text = $"You have clicked {count} times.";
+        }
     }
 }

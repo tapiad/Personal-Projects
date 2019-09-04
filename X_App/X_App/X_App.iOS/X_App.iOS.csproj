@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{88E31F3E-8067-4EB8-83CD-1FEBB014308C}</ProjectGuid>
+    <ProjectGuid>{DD2F16A9-1F8A-4B35-9F93-BCDCB3EDDCC9}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hello_Xamarin.iOS</RootNamespace>
+    <RootNamespace>X_App.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Hello Xamarin.iOS</AssemblyName>
+    <AssemblyName>X_App.iOS</AssemblyName>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -152,9 +152,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Hello_Xamarin\Hello_Xamarin.csproj">
-      <Project>{505371F9-60BC-41C3-94AA-9CD1FD2FC5CE}</Project>
-      <Name>Hello_Xamarin</Name>
+    <ProjectReference Include="..\X_App\X_App.csproj">
+      <Project>{1EFFF3A6-09E8-4F45-AC55-64B40BDF283D}</Project>
+      <Name>X_App</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

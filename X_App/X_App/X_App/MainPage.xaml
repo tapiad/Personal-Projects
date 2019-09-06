@@ -4,14 +4,29 @@
              xmlns:local="clr-namespace:X_App"
              x:Class="X_App.MainPage">
 
-    <StackLayout>
+    <StackLayout Margin="10,35,10,10">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-
-        <Button Text="Click Me" Clicked="Button_Clicked" />
+        <Label Text="Notes"
+               HorizontalOptions="Center"
+               FontAttributes="Bold" />
+        <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="100" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
         
-    </StackLayout>
+        <Button Text="Click Me" Clicked="Button_Clicked" />
 
+    </StackLayout>
+    
+    
 </ContentPage>

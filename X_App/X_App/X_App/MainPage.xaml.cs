@@ -11,7 +11,7 @@ namespace X_App
     public partial class MainPage : ContentPage
     {
 
-        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "notes.txt");
+        string _fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "x_app.txt");
 
         public MainPage()
         {
